@@ -1,0 +1,12 @@
+".text.php:not(.source)":
+
+  "Debug with Zend Framework":
+    "prefix": "Zend_Debug"
+    "body": """
+    Zend_Debug::dump(${1:$thing_to_debug}, 'debug')$2
+    """
+  "Debug in traditional var_dump":
+    "prefix": "var_dump"
+    "body": """
+    var_dump(${1:$thing_to_debug})$2
+    """

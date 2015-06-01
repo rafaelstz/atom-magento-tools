@@ -1,0 +1,75 @@
+".text.php:not(.source)":
+
+  "Magento Base URL":
+    "prefix": "baseUrl"
+    "body": """$this->getBaseUrl($1)$2"""
+
+  "Magento Skin URL":
+    "prefix": "skinUrl"
+    "body": """$this->getSkinUrl()$2"""
+
+  "Magento Child Html":
+    "prefix": "childUrl"
+    "body": """$this->getChildHtml($1)$2"""
+
+  "Magento Escape Html":
+    "prefix": "escapeHtml"
+    "body": """$this->escapeHtml($1)$2"""
+
+  "Magento Helper":
+    "prefix": "helper"
+    "body": """Mage::helper($1)$2"""
+
+  "Magento CMS Block":
+    "prefix": "cmsBlock"
+    "body": """
+      $this->getLayout()->createBlock('cms/block')->setBlockId('$1')->toHtml()$2
+      """
+
+  "Magento Admin Variable":
+    "prefix": "adminVar"
+    "body": """
+      Mage::getModel('core/variable')->loadByCode('$1')->getValue('')$2
+      """
+
+  "Magento Product Type":
+    "prefix": "productType"
+    "body": """
+      $_product->getTypeId('$1')$2
+      """
+
+  "Magento Translate":
+    "prefix": "translate"
+    "body": """
+      $this->__('$1')$2
+      """
+
+  "Magento Attribute Text":
+    "prefix": "attrText"
+    "body": """
+      $_product->getAttributeText('$1')$2
+      """
+
+  "Magento Secure URL":
+    "prefix": "secureUrl"
+    "body": """
+      $this->getUrl('$1'),array('_secure'=>true)$2
+      """
+
+  "Magento Formartted Price":
+    "prefix": "formattedPrice"
+    "body": """
+      $Mage::helper('core')->currency(${1:$finalPrice}, true, false)$2
+      """
+
+  "Magento Store Insformation":
+    "prefix": "storeInfo"
+    "body": """
+      Mage::getStoreConfig('general/store_information/$1')$2
+      """
+
+  "Magento Store Insformation":
+    "prefix": "storeInfo"
+    "body": """
+      Mage::getStoreConfig('general/store_information/$1')$2
+      """

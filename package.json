@@ -1,0 +1,29 @@
+{
+  "name": "magento-snippets",
+  "main": "./lib/magento-snippets",
+  "version": "0.0.0",
+  "author": {
+    "name": "Rafael Corrêa Gomes",
+    "email": "rafaelcgstz@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/rafaelstz/Atom-Magento-Snnipets/issues"
+  },
+  "description": "Magento Snippets is perfect for those who want to be fast and practical in Magento development.",
+  "keywords": [
+    "magento",
+    "snippet",
+    "cms",
+    "Framework",
+    "Zend"
+  ],
+  "activationCommands": {
+    "atom-workspace": "magento-snippets:toggle"
+  },
+  "repository": "https://github.com/rafaelstz/atom-magento-snippets",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=0.174.0 <2.0.0"
+  },
+  "dependencies": {}
+}
