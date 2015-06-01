@@ -1,5 +1,5 @@
 {
-  "name": "magento-snippets",
+  "name": "magento-tools",
   "main": "./lib/magento-snippets",
   "version": "0.0.1",
   "author": {
@@ -7,7 +7,7 @@
     "email": "rafaelcgstz@gmail.com"
   },
   "bugs": {
-    "url": "https://github.com/rafaelstz/Atom-Magento-Snnipets/issues"
+    "url": "https://github.com/rafaelstz/atom-magento-tools/issues"
   },
   "description": "Magento Snippets is perfect for those who want to be fast and practical in Magento development.",
   "keywords": [
@@ -20,7 +20,7 @@
   "activationCommands": {
     "atom-workspace": "magento-snippets:toggle"
   },
-  "repository": "https://github.com/rafaelstz/atom-magento-snippets",
+  "repository": "https://github.com/rafaelstz/atom-magento-tools",
   "license": "MIT",
   "engines": {
     "atom": ">=0.174.0 <2.0.0"
