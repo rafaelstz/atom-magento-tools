@@ -1,4 +1,4 @@
-# Magento Tools [![Package Atom](https://img.shields.io/badge/Package-Atom-blue.svg)](https://atom.io/packages/magento-snippets) [![Version 0.0.2-0](https://img.shields.io/badge/Release-0.1.0-green.svg)](https://atom.io/packages/magento-snippets/releases)
+# Magento Tools [![Package Atom](https://img.shields.io/badge/Package-Atom-blue.svg)](https://atom.io/packages/magento-tools)  [![Version 0.0.2-0](https://img.shields.io/badge/Release-0.0.2-green.svg)](https://atom.io/packages/magento-snippets/releases)
 
 
 Ideal for developing Magento themes, get hints of the main functions, classes and methods. This plugin will greatly facilitate the development, mainly on the frontend. He suggests methods, built-in functions and classes Magento quickly and easily, it besides being open has a very simple way of contribution to customize your way.
