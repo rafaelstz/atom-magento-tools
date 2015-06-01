@@ -1,7 +1,7 @@
 {
   "name": "magento-snippets",
   "main": "./lib/magento-snippets",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": {
     "name": "Rafael Corrêa Gomes",
     "email": "rafaelcgstz@gmail.com"
