@@ -68,8 +68,20 @@
       Mage::getStoreConfig('general/store_information/$1')$2
       """
 
-  "Magento Store Insformation":
-    "prefix": "storeInfo"
+  "Magento load product by name":
+    "prefix": "loadProductByName"
     "body": """
-      Mage::getStoreConfig('general/store_information/$1')$2
+      $_product = Mage::getModel('catalog/product')->loadByAttribute('${1:name}', '${2:emerald earring}');$3
+      """
+
+  "Magento load category by name":
+    "prefix": "loadCategoryByName"
+    "body": """
+      $_product = Mage::getModel('catalog/category')->loadByAttribute('${1:name}', '${2:Ruby Ring}');$3
+      """
+
+  "Magento load product by Id":
+    "prefix": "loadProductById"
+    "body": """
+      $_product = Mage::getModel('catalog/product')->loadByAttribute('${1:sku}', '${2:Eram18j4}');$3
       """
