@@ -4,7 +4,8 @@
   "version": "0.0.2",
   "author": {
     "name": "Rafael Corrêa Gomes",
-    "email": "rafaelcgstz@gmail.com"
+    "email": "rafaelcgstz@gmail.com",
+    "url": "rafaelstz.github.io"
   },
   "bugs": {
     "url": "https://github.com/rafaelstz/atom-magento-tools/issues"
