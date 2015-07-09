@@ -1,87 +1,87 @@
 ".text.php:not(.source)":
 
   "Magento Base URL":
-    "prefix": "baseUrl"
+    "prefix": "mg-baseurl"
     "body": """$this->getBaseUrl($1)$2"""
 
   "Magento Skin URL":
-    "prefix": "skinUrl"
+    "prefix": "mg-skinurl"
     "body": """$this->getSkinUrl()$2"""
 
   "Magento Child Html":
-    "prefix": "childUrl"
+    "prefix": "mg-childhtml"
     "body": """$this->getChildHtml($1)$2"""
 
   "Magento Escape Html":
-    "prefix": "escapeHtml"
+    "prefix": "mg-escapeHtml"
     "body": """$this->escapeHtml($1)$2"""
 
   "Magento Helper":
-    "prefix": "helper"
+    "prefix": "mg-helper"
     "body": """Mage::helper($1)$2"""
 
   "Magento CMS Block":
-    "prefix": "cmsBlock"
+    "prefix": "mg-cms-block"
     "body": """
       $this->getLayout()->createBlock('cms/block')->setBlockId('$1')->toHtml()$2
       """
 
   "Magento Admin Variable":
-    "prefix": "adminVar"
+    "prefix": "mg-admin-var"
     "body": """
       Mage::getModel('core/variable')->loadByCode('$1')->getValue('')$2
       """
 
   "Magento Product Type":
-    "prefix": "productType"
+    "prefix": "mg-product-type"
     "body": """
       $_product->getTypeId('$1')$2
       """
 
   "Magento Translate":
-    "prefix": "translate"
+    "prefix": "mg-this"
     "body": """
       $this->__('$1')$2
       """
 
   "Magento Attribute Text":
-    "prefix": "attrText"
+    "prefix": "mg-attr-text"
     "body": """
       $_product->getAttributeText('$1')$2
       """
 
   "Magento Secure URL":
-    "prefix": "secureUrl"
+    "prefix": "mg-secure-url"
     "body": """
       $this->getUrl('$1'),array('_secure'=>true)$2
       """
 
   "Magento Formartted Price":
-    "prefix": "formattedPrice"
+    "prefix": "mg-formatted-price"
     "body": """
       $Mage::helper('core')->currency(${1:$finalPrice}, true, false)$2
       """
 
   "Magento Store Insformation":
-    "prefix": "storeInfo"
+    "prefix": "mg-store-info"
     "body": """
       Mage::getStoreConfig('general/store_information/$1')$2
       """
 
   "Magento load product by name":
-    "prefix": "loadProductByName"
+    "prefix": "mg-load-product-by-name"
     "body": """
       $_product = Mage::getModel('catalog/product')->loadByAttribute('${1:name}', '${2:emerald earring}');$3
       """
 
   "Magento load category by name":
-    "prefix": "loadCategoryByName"
+    "prefix": "mg-load-category-by-name"
     "body": """
       $_product = Mage::getModel('catalog/category')->loadByAttribute('${1:name}', '${2:Ruby Ring}');$3
       """
 
   "Magento load product by Id":
-    "prefix": "loadProductById"
+    "prefix": "mg-load-product-by-id"
     "body": """
       $_product = Mage::getModel('catalog/product')->loadByAttribute('${1:sku}', '${2:Eram18j4}');$3
       """
